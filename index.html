@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        Hello! It's <span class="dark">Sachin</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="social">
+          <a href="#" style="--i: 1"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#" style="--i: 2"><i class="bx bxl-github"></i></a>
+          <a href="#" style="--i: 3"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" style="--i: 4"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img"><img src="#" alt="image"></div>
+      <div class="about-txt">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi soluta culpa obcaecati fugiat, aperiam suscipit libero, dignissimos sint ea esse provident, iusto assumenda? Rem quaerat dolore voluptatum veniam blanditiis aut voluptates dignissimos ducimus eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque asperiores dolores, laborum officiis, atque tenetur deleniti expedita deserunt eligendi vero alias perferendis labore accusamus in qui, incidunt aspernatur nihil sunt nemo doloremque neque. Dolor, voluptate optio! Eveniet blanditiis eligendi deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa non totam dicta beatae aperiam sapiente voluptate cupiditate adipisci quisquam ullam alias iure ex illum, atque consequatur perferendis soluta, tenetur doloribus officia, sequi ratione? Dolore quasi dolor sequi a. Alias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi adipisci eum totam harum minus voluptatibus repellendus placeat sit, neque autem amet expedita hic quas, odit officiis nemo, ipsum quo temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore qui debitis ullam, voluptatum porro labore itaque maxime dolor molestias deleniti dicta, accusantium rerum nisi nam, aperiam deserunt consectetur amet soluta alias necessitatibus? Corrupti alias fugiat consequatur error dolor aperiam architecto ad, commodi hic reprehenderit molestiae dicta nulla repudiandae perspiciatis.</p>
+      </div>
+    </section>
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer..",
+          "Graphic Designer..",
+          "Web Designer..",
+          "Programmer..",
+        ],
+        typeSpeed: 40,
+        backSpeed: 20,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
