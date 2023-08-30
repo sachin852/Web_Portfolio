@@ -58,18 +58,11 @@ body {
   width: 90%;
   justify-content: space-between;
   height: 100vh;
-  background: url(banner.png) no-repeat;
-  background-size: auto 70%;
-  background-position: right;
   display: flex;
   align-items: center;
   margin: 0px auto;
-  padding: 10px 50px;
-  /* opacity: 0; */
-  animation: floatImage 4s ease-in-out infinite;
-  animation-delay: 0.5s;
+  padding: 10px 50px;  
 }
-
 .home-content {
   max-width: 600px;
   font-size: 50px;
@@ -78,6 +71,14 @@ body {
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.5s;
 }
+.home-img img{
+  display: flex;
+  height: 500px;
+  animation: floatImage 3s ease-in-out infinite;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
 .dark {
   color: #115452;
   opacity: 0;
@@ -146,14 +147,18 @@ body {
     opacity: 1;
   }
 }
-@keyframes floatImage{
+
+@keyframes floatImage {
   0%{
     transform: translateY(0px);
+    opacity: 1;
   }
   50%{
-    transform: translateY(-2.3rem);
+    transform: translateY(2rem);
+    opacity: 1;
   }
   100%{
     transform: translateY(0px);
+    opacity: 1;
   }
 }
